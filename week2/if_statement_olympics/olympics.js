@@ -5,7 +5,7 @@ if (5 > 3){
 }
 //#2
 //if (cat = 3)
-var length = "cat"; {
+if ("cat".length === 3) {
     console.log("is the length");
 }
 //#3
