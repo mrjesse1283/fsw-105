@@ -62,15 +62,15 @@ function nameAgeGender(){
 for ( var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++ ) {
     if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18) {
         if(peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "male"){
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is Old Enough, let Him in.");
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough. He's good to see Mad Max Fury Road.");
     } else {
-        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough let Her in.");
+        console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is old enough. SHE'S good to see Mad Max Fury Road.");
     } 
     } else {
         if(peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "female"){
-            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " Is not old enough, don't let HER in.");
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough to see Mad Max Fury Road, don't let Her in");
         } else {
-            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " Is not old enough, don't let HIM in.");
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enough to see Mad Max Fury Road, don't let HIM in");
         }
     }
 }
@@ -79,15 +79,14 @@ nameAgeGender();
 console.log("=======");
 
 //#4 up to 100
-var num = 0
-    for( var i = 0; i < 101; i++){
-      if( i % 2 == 0){
-        num++
-        console.log(num + " it is even");
+var num = 0;
+    for( i = 0; i < 101; i++){
+      if( i % 2 !== 0){
+        console.log(i + " it is even");
     } else {
-        console.log(num + " it is odd");
+        console.log(i + " it is odd");
     }
-}
+};
 
 
 
