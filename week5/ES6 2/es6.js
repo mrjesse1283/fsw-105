@@ -1,3 +1,4 @@
+/* jshint esversion:6 */
 //1
 const manName = "John";
 const age = 101;

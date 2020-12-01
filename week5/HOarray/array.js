@@ -36,7 +36,7 @@ console.log(doubleNum([2, 5, 10]));
 function stringItUP(arr){
     const result = arr.map(function(num){
         return num.toString();  
-    })
+    });
     return result;
 } 
 console.log(stringItUP([2, 5, 100]));
@@ -101,18 +101,18 @@ console.log("section D");
 function leastToGreatest(arr){
     const result = arr.sort(function(a, b){
         return a -b;
-    })
+    });
     return result;
-};
+}
 console.log(leastToGreatest([1, 3, 5, 2, 90, 20]));
 
 //D.2
 function greatestToLeast(arr){
     const result = arr.sort(function(a, b){
         return b - a;
-    })
+    });
     return result;
-};
+}
 console.log(greatestToLeast([1, 3, 5, 2, 90, 20]));
 
 //D.3

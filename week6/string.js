@@ -47,3 +47,7 @@ console.log(str.substr(1, 4));
 //extra .substring()
 var str = "Hello world!";
 console.log(str.substring(1, 4));
+
+//push() not sure how to use this one. it seems the console is telling me how many strings.
+var fruits = [];
+console.log(fruits.unshift("kiwi"));

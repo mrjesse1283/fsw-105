@@ -2,34 +2,34 @@ var fruit = ["banana", "apple", "orange", "watermelon"];
 var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
 
 function arrayExercises(){
-    vegetables.pop()
+    vegetables.pop();
     //console.log("veggie array: " + vegetables);
 
-    fruit.shift()
+    fruit.shift();
     //console.log("fruit array: " + fruit);
   
     var indexOfOrange = fruit.indexOf("orange");
     //console.log(indexOfOrange);
 
-    var addToEnd = fruit.push(indexOfOrange)
+    var addToEnd = fruit.push(indexOfOrange);
     //console.log(fruit);
 
     var vegetablesLength = vegetables.length;
     //console.log(vegetablesLength);
 
-    var addToEnd = vegetables.push(vegetablesLength)
+    var addToEnd = vegetables.push(vegetablesLength);
     //console.log(vegetables);
 
-    var food = fruit.concat(vegetables)
+    var food = fruit.concat(vegetables);
     //console.log(food);
 
-    var foodArray = food.splice(4, 2)
+    var foodArray = food.splice(4, 2);
     //console.log(food);
 
-    var reversedArr = food.reverse()
+    var reversedArr = food.reverse();
     //console.log(reversedArr);
 
-    var arrayToString = reversedArr.join()
+    var arrayToString = reversedArr.join();
     return arrayToString;
 
 }
