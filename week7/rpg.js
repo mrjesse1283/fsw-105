@@ -8,14 +8,14 @@ readlineSync.question(`${name}, to make it out of here alive you will need to ch
 /* console.log(welcomeMessage); */
 const badGuys = ["Monster", "Nightmare", "BlankMan", "Smasher"];
 
-const treasure = ["shield", "food", "shelter", "water"];
-var prize = [];
+const prizes = ["shield", "food", "shelter", "water"];
+var prizeList = [];
 
 let userHealth = 40;
 
-const options = ["Walk", "Exit", "Print"];
+const choices = ["Walk", "Exit", "Print"];
 
-let pickUp = treasure[Math.floor(Math.random() * treasure.length)];
+let grab = prizes[Math.floor(Math.random() * prizes.length)];
 
 
 function game(){
@@ -24,13 +24,13 @@ function game(){
     let badGuysHealth = 40;
     const badGuysPower = Math.floor(Math.random() * (5 - 3 + 2) + 5);
 
-    const index = readlineSync.keyInSelect(options, "What will be your destiny? ");
+    const index = readlineSync.keyInSelect(choices, " What will be your destiny? ");
 
-    if(options[index] == "Exit") {
+    if(choices[index] == "Exit") {
         return userHealth == 0;
-    }else if (options[index] == "Print") {
-        console.log(name + ":\n" + userHealth + ":Prize" + pickUp);
-    }else if (options[index] == "Walk"){
+    }else if (choices[index] == "Print") {
+        console.log(name + ":\n" + userHealth + ":Prize" + grab);
+    }else if (choices[index] == "Walk"){
         let key = Math.random();
         if(key <= '.3') {
             console.log("walking....");
@@ -59,10 +59,10 @@ function game(){
                         console.log("The villian just attacked you with " + badGuysPower + " power.");
 
                         if(badGuysHealth <= 0) {
-                            console.log("You destroyed " + badGuy + ".\n" + "\t" + badGuy + " dropped " + pickUp );
+                            console.log("You destroyed " + badGuy + ".\n" + "\t" + badGuy + " dropped " + grab );
                             let loot = Math.random();
                             if(loot <= '.3'){
-                                prize.push(pickUp);
+                                prizeList.push(grab);
                             }
                             }else if(userHealth <= 0) {
                                 console.log(badGuy + "has devastated you, You are dead!");
